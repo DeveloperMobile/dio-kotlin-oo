@@ -7,8 +7,7 @@ import digital.innovation.one.Pessoa
 import java.math.BigDecimal
 
 fun main() {
-    var tiago = Gerente(nome = "Tiago Vieira", cpf = "123.456.789-10", salario = 2000.0)
+    var tiago = Gerente(nome = "Tiago Vieira", cpf = "123.456.789-10", salario = 2000.0, senha = "senha123")
     ImprimeRelatorioFuncionario.imrpime(tiago)
+    TesteAutenticacao().autentica(tiago)
 }
-
-fun imprimeRelatorio(gerente: Gerente) = println(gerente.toString())
